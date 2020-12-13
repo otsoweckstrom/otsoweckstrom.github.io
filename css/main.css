@@ -1,0 +1,279 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: white;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
+.menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  height: 100vh;
+  overflow: hidden;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  background: rgba(4, 2, 32, 0.8);
+  list-style: none;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu-branding {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  height: 100vh;
+  overflow: hidden;
+  width: 50%;
+  background: #070338;
+  transition: all 0.5s ease-out;
+  transform: translate3d(0, 100%, 0);
+}
+
+.menu-branding.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .portrait {
+  width: 250px;
+  height: 250px;
+  background: url("../img/triangle.png");
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 3px #ffffff;
+}
+
+.menu .nav-item {
+  transition: all 0.5s ease-out;
+  transform: translate3d(600px, 0, 0);
+}
+
+.menu .nav-item.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-item.current>a {
+  color: #a770ff;
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+  color: #ffff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.menu:hover {
+  color: #a770ff;
+}
+.nav-link:hover {
+  color: #b88bff;
+}
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+
+  align-items: center;
+  text-align: center;
+
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .menu-branding .portrait {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #070338;
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body#bg-img {
+  background: url(../img/vaporwave-bg.jpg);
+  background-size: 1920px 1080px;
+  background-attachment: fixed;
+}
+
+body#bg-img:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 3, 56, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(173, 122, 255, 0.5);
+  width: 600px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #a770ff;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main h1 {
+  margin-top: 20vh;
+}
+
+.icons {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.icons a {
+  padding: 0.3rem;
+}
+
+.icons a:hover {
+  color: #a770ff;
+  transition: all 0.5s ease-out;
+}
