@@ -8,7 +8,7 @@
 
     <title>Portfolio</title>
   </head>
-  <body id="bg-img">
+  <body id="bg-img2">
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -44,10 +44,20 @@
         </ul>
       </nav>
     </header>
-    <main id="home">
+    <main id="about">
      <div>
-       <h1>Absolutely nothing to see here</h1>
-     </div>
+       <h2 class="about-font">Hello, my name is Otso</h2>
+       <h2 class="about-font">I am a    
+       <span id="datetime"></span>
+       <script>
+       var myDate = new Date();
+       var age = (myDate.getFullYear() - 1997);
+       document.getElementById("datetime").innerHTML = age;
+       </script>year old student living in Lappeenranta. I'm Currently studying software engineering at <span class="text-secondary">Lappeenrannan-Lahden Teknillinen Yliopisto LUT University</span>
+       </h2>
+       <h2 class="about-font">I like: Video Games, Dogs, Employment, Video Editing
+       </h2>
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>

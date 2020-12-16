@@ -204,6 +204,13 @@ body#bg-img {
   background-attachment: fixed;
 }
 
+body#bg-img2 {
+  background: url(../img/vaporwave\ city.jpg);
+  background-size: 1920px 1080px;
+  background-attachment: fixed;
+}
+
+
 body#bg-img:after {
   content: "";
   z-index: -1;
@@ -237,6 +244,8 @@ h3.sm-heading {
   width: 600px;
 }
 
+
+
 a {
   color: white;
   text-decoration: none;
@@ -261,7 +270,7 @@ main#home {
   overflow: hidden;
 }
 
-main h1 {
+main#home h1 {
   margin-top: 20vh;
 }
 
@@ -277,4 +286,37 @@ main h1 {
 .icons a:hover {
   color: #a770ff;
   transition: all 0.5s ease-out;
+}
+
+main#about {
+  overflow: hidden;
+}
+h2.about-font{
+  font-size: 2rem;
+  font-family:monospace;
+}
+
+.datetime {
+  color:rgba(173, 122, 255, 0.5);
+}
+
+
+main#contact {
+  overflow: hidden;
+}
+
+div#contact{
+  margin-top: 30vh;
+  margin-left: 52vh;
+}
+.email-font{
+  padding-bottom: 1vh;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.919);
+
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+main#work {
+  overflow: hidden;
 }
