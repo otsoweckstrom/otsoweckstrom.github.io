@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main id="about">
+    <main id="about" >
      <div>
        <h2 class="about-font">Hello, my name is Otso</h2>
        <h2 class="about-font">I am a    
@@ -55,8 +55,39 @@
        document.getElementById("datetime").innerHTML = age;
        </script>year old student living in Lappeenranta. I'm Currently studying software engineering at <span class="text-secondary">Lappeenrannan-Lahden Teknillinen Yliopisto LUT University</span>
        </h2>
-       <h2 class="about-font">I like: Video Games, Dogs, Employment, Video Editing
+       <h2 class="about-font">I like: Dogs, Video Games, Employment, Video Editing
        </h2>
+      </div>
+      <div id="puppy" onclick="movePuppy()">
+        <script>
+          var move = 20;
+          var movingPuppy = document.getElementById("puppy");
+          var direction = true;
+          function movePuppy()
+          {
+            if(movingPuppy.style.left == "1500px"){
+              direction = false;
+              movingPuppy.style.transform  = "scaleX(-1)";
+              movingPuppy.style.left = "1480px";
+            }
+            else if(movingPuppy.style.left == "0px"){
+              direction = true;
+              movingPuppy.style.transform  = "scaleX(1)";
+              movingPuppy.style.left = "20px";
+              
+            }
+            else if(!direction){
+              movingPuppy.style.left = move + "px";
+              move -= 20;
+            }
+            else if(direction){
+              movingPuppy.style.left = move + "px";
+              move += 20;
+            }
+
+          }
+          
+        </script>
       </div>
     </main>
     <script src="js/main.js"></script>
