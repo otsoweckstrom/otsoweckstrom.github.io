@@ -200,13 +200,13 @@ body {
 
 body#bg-img {
   background: url(../img/vaporwave-bg.jpg);
-  background-size: 1920px 1080px;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 body#bg-img2 {
   background: url(../img/vaporwave\ city.jpg);
-  background-size: 1920px 1080px;
+  background-size: cover;
   background-attachment: fixed;
 }
 #puppy{
