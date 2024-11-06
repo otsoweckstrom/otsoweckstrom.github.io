@@ -1,8 +1,44 @@
-.home {
+.wrapper {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #333;
-  color: #fff;
+}
+
+.typing-demo {
+  width: 22ch;
+  opacity: 0;
+  animation: typing 2s steps(22, end) forwards, blink 0.4s 5 forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.typing-demo:nth-child(2) {
+  animation: typing 3s steps(30, end) forwards, blink 0.5s 11 forwards;
+  animation-delay: 3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: var(--steps);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    border-color: black; /* Cursor visible during the blink */
+  }
+  100% {
+    border-color: transparent; /* Cursor invisible at the end */
+  }
 }

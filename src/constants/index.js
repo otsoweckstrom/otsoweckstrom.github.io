@@ -40,6 +40,11 @@ export const navLinks = [
   },
 ]
 
+const hello = [
+  { line: 1, text: 'Hello!' },
+  { line: 2, text: 'I am Otso Weckström' },
+]
+
 const services = []
 
 const technologies = [
@@ -271,4 +276,4 @@ const projects = [
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, testimonials, projects, hello }
