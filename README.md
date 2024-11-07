@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal portfolio website built with Vanilla JavaScript, React, and CSS. Clean and modern UI.
 
-## Available Scripts
+**Table of Contents**
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
 
-### `npm test`
+Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies Used
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Features**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Home Section - Typewriter effect for introduction text
 
-### `npm run eject`
+Projects Section - Display of selected projects with descriptions and links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contact Section - Contact form and social media links
+ 
+UNResponsive Design - Not responsive whatsoever
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Simple and Fast - Developed with vanilla JavaScript and CSS for optimal performance
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Getting Started**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Follow these steps to set up and run the project locally.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Node.js (v14 or higher recommended)
 
-### Code Splitting
+Yarn or npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Installation
 
-### Analyzing the Bundle Size
+Clone the repository and install the dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+git clone https://github.com/yourusername/portfolio-website.git
 
-### Advanced Configuration
+cd portfolio-website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm install
 
-### Deployment
+Or, if you prefer Yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Running the Project
+
+To run the project locally:
+
+
+npm start
+
+Or:
+
+yarn start
+
+This should open the project in your default browser at http://localhost:3000.
+
+
+**Folder Structure**
+
+The project follows a clean and organized structure for easy maintenance.
+
+.
+├── public/             # Static assets (images, icons, etc.)
+
+├── src/
+
+│   ├── components/     # Reusable React components
+
+│   ├── pages/          # Page components (e.g., Home, Portfolio, Contact)
+
+│   ├── styles/         # CSS files for styling
+
+│   └── App.js          # Root component
+
+├── package.json        # Project metadata and dependencies
+
+└── README.md           # Project documentation
+
+**Technologies Used**
+
+Vanilla JavaScript - JavaScript for all interactive elements
+
+React - JavaScript library for building user interfaces
+
+CSS - Styling for layout, typography, and responsiveness
+
