@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: space-between;
+  margin-bottom: 40vh;
 }
 
 .home-img {
@@ -15,6 +15,7 @@
 .typewriter-container {
   display: flex;
   flex-direction: column;
+  width: 200ch;
 }
 
 .typing {
@@ -54,8 +55,8 @@
 .typing:nth-child(5) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
     blink 0.5s 17 forwards;
-  animation-delay: 23s;
-  margin-top: 1vh;
+  animation-delay: 24s;
+  margin-top: 10vh;
 }
 @keyframes typing {
   from {

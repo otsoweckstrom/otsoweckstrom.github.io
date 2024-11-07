@@ -23,6 +23,10 @@ import {
   unity,
   mysql,
   nextjs,
+  league,
+  portfolio,
+  creditcard,
+  wordcloud,
 } from '../assets'
 
 export const navLinks = [
@@ -49,11 +53,11 @@ const hello = [
   },
   {
     line: 4,
-    text: 'On here you can find some of my projects, my resume and my socials',
+    text: 'On here you can find some of my projects, my resume, and my socials',
   },
   {
     line: 5,
-    text: "Feel free to look around and send me a message if you'd like to chat about something!",
+    text: '',
   },
 ]
 
@@ -229,62 +233,62 @@ const projects = [
   {
     name: 'League of Legends AI prediction',
     description:
-      'An AI model used to predict the winning team and best picks based on selected champions.',
+      'An extensive AI project which predicts the win rate of the next game and the highest winrate choice based on the lobby.',
     tags: [
       {
         name: 'python',
-        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Tensorflow',
       },
     ],
-    image: seoultech,
+    image: league,
     source_code_link:
       'https://github.com/otsoweckstrom/AI-Win-Prediction-League',
   },
   {
     name: 'This Website',
-    description: 'Portfolio website made using React, JavaScript and CSS',
-    tags: [
-      {
-        name: 'React',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'JavaScript',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: seoultech,
-    source_code_link: 'github',
-  },
-  {
-    name: 'League of Legends AI prediction',
     description:
-      'An AI model used to predict the winning team and best picks based on selected champions.',
-    tags: [
-      {
-        name: 'python',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: seoultech,
-    source_code_link:
-      'https://github.com/otsoweckstrom/AI-Win-Prediction-League',
-  },
-  {
-    name: 'This Website',
-    description: 'Portfolio website made using React, JavaScript and CSS',
+      'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
     tags: [
       {
         name: 'React',
-        color: 'blue-text-gradient',
       },
       {
         name: 'JavaScript',
-        color: 'blue-text-gradient',
+      },
+      {
+        name: 'CSS',
       },
     ],
-    image: seoultech,
-    source_code_link: 'github',
+    image: portfolio,
+    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
+  },
+  {
+    name: 'Credit Card Classification Algorithm',
+    description:
+      'A Machine Learning model to predict credit card category based on customer data. The project utilizes multiple ML and data analysis techniques such as data cleaning, feature engineering, and building predictive models using linear regression and random forest techniques. The project also explores model evaluation methods such as AUROC and k-fold cross-validation.',
+
+    tags: [
+      {
+        name: 'R',
+      },
+    ],
+    image: creditcard,
+    source_code_link: 'https://github.com/otsoweckstrom/credit_AI/tree/main',
+  },
+  {
+    name: 'Reddit Comment Scraper',
+    description:
+      'The script scrapes each comment section of a chosen subreddits posts and orders the words found from most common to least common as well as creates a wordcloud based on the word counts.',
+    tags: [
+      {
+        name: 'python',
+      },
+    ],
+    image: wordcloud,
+    source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
+    youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
   },
 ]
 

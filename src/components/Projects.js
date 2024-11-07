@@ -7,22 +7,51 @@ const Projects = () => {
   return (
     <div className='projects'>
       <h3 className='title'>PROJECTS</h3>
+      <h2 className='subtitle'>
+        These are some of my favorite personal projects.
+        <p className='line'></p> I've also worked on multiple professional
+        projects but unfortunately I can't share those here
+        <p className='line'></p>
+        I'm more than happy to talk about them though if you're interested!
+      </h2>
+
       <div className='projects-container'>
         {projects.map((project, index) => (
           <div key={index} className='project'>
             <h3 className='project-title'>{project.name}</h3>
-            <div className='project-content'>
-              <p>{project.description}</p>
-              <div className='tags'>
-                {project.tags.map((tag, index) => (
-                  <div key={index} className='tag'>
-                    <p>{tag.name}</p>
-                  </div>
-                ))}
-              </div>
+            <p className='project-description'>{project.description}</p>
+            <div className='project-image-container'>
+              <img
+                src={project.image}
+                alt={project.name}
+                className='project-image'
+              />
             </div>
-
-            <p className='project-source'>{project.source_code_link}</p>
+            <div className='tags'>
+              {project.tags.map((tag, index) => (
+                <div key={index} className='tag'>
+                  <p>{tag.name}</p>
+                </div>
+              ))}
+            </div>
+            <div className='links-container'>
+              <a
+                className='project-source'
+                href={project.source_code_link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {project.source_code_link}
+              </a>
+              <a
+                className='project-source'
+                href={project.source_code_link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {project.youtube_link}
+              </a>
+            </div>
           </div>
         ))}
       </div>

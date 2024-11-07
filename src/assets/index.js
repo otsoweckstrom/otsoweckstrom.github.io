@@ -35,8 +35,16 @@ import seoultech from './company/seoultech.png'
 import visma from './company/visma.png'
 import twoday from './company/twoday.png'
 import ajatec from './company/ajatec.png'
+import league from './projects/league_project.png'
+import portfolio from './projects/portfolio_project.png'
+import creditcard from './projects/creditcard_project.png'
+import wordcloud from './projects/wordcloud_output.png'
 
 export {
+  wordcloud,
+  creditcard,
+  portfolio,
+  league,
   logo,
   github,
   menu,
