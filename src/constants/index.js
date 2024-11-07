@@ -42,7 +42,16 @@ export const navLinks = [
 
 const hello = [
   { line: 1, text: 'Hello!' },
-  { line: 2, text: 'I am Otso Weckström' },
+  { line: 2, text: 'I am Otso Weckström a Software Engineer from Finland' },
+  { line: 3, text: 'On this page you can find some of my projects' },
+  {
+    line: 4,
+    text: "here's my resume >",
+  },
+  {
+    line: 5,
+    text: "and here's how to get in touch with me >",
+  },
 ]
 
 const services = []
