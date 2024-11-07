@@ -11,11 +11,11 @@ Technologies Used
 
 
 Features
-📄 About Section - Brief introduction about yourself and your skills
-💼 Portfolio Section - Display of selected projects with descriptions and links
-📞 Contact Section - Contact form and social media links
-🎨 Responsive Design - Fully responsive layout built with CSS
-⚡ Simple and Fast - Developed with vanilla JavaScript and CSS for optimal performance
+Home Section - Typewriter effect for introduction text
+Projects Section - Display of selected projects with descriptions and links
+ Contact Section - Contact form and social media links
+UNResponsive Design - Not responsive whatsoever
+Simple and Fast - Developed with vanilla JavaScript and CSS for optimal performance
 Getting Started
 Follow these steps to set up and run the project locally.
 
