@@ -1,93 +1,120 @@
 .home {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+}
+
+.arrow-container {
+	position: absolute;
+	bottom: 2vh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.stick {
+	content: '';
+	width: 0.2rem;
+	height: 3rem;
+	background-color: black;
+	margin-bottom: 10px;
+}
+
+.arrow {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-top: 1rem solid black;
 }
 
 .home-img {
-  opacity: 0;
-  animation: fadein 3s ease-in-out forwards;
+	opacity: 0;
+	animation: fadein 3s ease-in-out forwards;
 }
 
 .typewriter-container {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
 }
 
 .typing {
-  width: var(--width);
-  opacity: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid black;
-  font-family: monospace;
-  font-size: 2em;
+	width: var(--width);
+	opacity: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid black;
+	font-family: monospace;
+	font-size: 2em;
 }
 
 .typing:nth-child(1) {
-  animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s var(--blink) forwards;
+	animation: typing var(--typing) steps(var(--steps), end) forwards,
+		blink 0.5s var(--blink) forwards;
 }
 
 .typing:nth-child(2) {
-  animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 13 forwards;
-  animation-delay: 2s;
-  margin-top: 0.5vh;
+	animation: typing var(--typing) steps(var(--steps), end) forwards,
+		blink 0.5s 9 forwards;
+	animation-delay: 2s;
+	margin-top: 1vh;
 }
 
 .typing:nth-child(3) {
-  animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 11 forwards;
-  animation-delay: 8s;
-  margin-top: 3vh;
+	animation: typing var(--typing) steps(var(--steps), end) forwards,
+		blink 0.5s 15 forwards;
+	animation-delay: 8s;
+	margin-top: 3vh;
 }
 .typing:nth-child(4) {
-  animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 7 forwards;
-  animation-delay: 14s;
-  margin-top: 1vh;
+	animation: typing var(--typing) steps(var(--steps), end) forwards,
+		blink 0.5s 7 forwards;
+	animation-delay: 16s;
+	margin-top: 1vh;
 }
 .typing:nth-child(5) {
-  animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 11 forwards;
-  animation-delay: 18s;
-  margin-top: 1vh;
+	animation: typing var(--typing) steps(var(--steps), end) forwards,
+		blink 0.5s 15 forwards;
+	animation-delay: 18s;
+	margin-top: 1vh;
 }
 @keyframes typing {
-  from {
-    width: 0;
-    opacity: 1;
-  }
-  to {
-    width: var(--width);
-    opacity: 1;
-  }
+	from {
+		width: 0;
+		opacity: 1;
+	}
+	to {
+		width: var(--width);
+		opacity: 1;
+	}
 }
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes blink {
-  0%,
-  50% {
-    border-color: black;
-  }
-  100% {
-    border-color: transparent;
-  }
+	0%,
+	50% {
+		border-color: black;
+	}
+	100% {
+		border-color: transparent;
+	}
 }
