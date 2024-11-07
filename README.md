@@ -2,7 +2,7 @@ Portfolio Website
 
 A personal portfolio website built with Vanilla JavaScript, React, and CSS. Clean and modern UI.
 
-Table of Contents
+**Table of Contents**
 
 Features
 
@@ -18,19 +18,19 @@ Technologies Used
 
 
 
-Features
+**Features**
 
 Home Section - Typewriter effect for introduction text
 
 Projects Section - Display of selected projects with descriptions and links
 
- Contact Section - Contact form and social media links
+Contact Section - Contact form and social media links
  
 UNResponsive Design - Not responsive whatsoever
 
 Simple and Fast - Developed with vanilla JavaScript and CSS for optimal performance
 
-Getting Started
+**Getting Started**
 
 Follow these steps to set up and run the project locally.
 
@@ -73,7 +73,7 @@ yarn start
 This should open the project in your default browser at http://localhost:3000.
 
 
-Folder Structure
+**Folder Structure**
 
 The project follows a clean and organized structure for easy maintenance.
 
@@ -94,7 +94,7 @@ The project follows a clean and organized structure for easy maintenance.
 
 └── README.md           # Project documentation
 
-Technologies Used
+**Technologies Used**
 
 Vanilla JavaScript - JavaScript for all interactive elements
 
