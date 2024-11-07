@@ -1,14 +1,20 @@
 .projects {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-color: #333;
+  height: 120vh;
+  background-image: linear-gradient(to bottom, #fff, #333);
   color: #fff;
+  padding-top: 12vh;
 }
 
 .title {
   text-align: center;
   margin: 2rem;
+  color: #333;
+  font-family: monospace;
+  font-size: 4em;
+  margin-bottom: 6vh;
+  opacity: 0.6;
 }
 
 .projects-container {
@@ -18,12 +24,13 @@
   justify-content: center;
 }
 .project {
-  transition: background-color 1.5s ease;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+  background-color: #333;
   flex: 0 0 33%;
   max-width: 33%;
   min-width: 33%;
 
-  height: 40vh;
+  height: 35vh;
 
   display: flex;
   flex-direction: column;
@@ -60,6 +67,8 @@
 }
 
 .project:hover {
-  transition: background-color 1.5s ease;
-  background-color: aqua;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+  background-color: #464646;
+
+  border-color: #333;
 }

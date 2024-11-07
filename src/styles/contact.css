@@ -1,0 +1,8 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  background-image: linear-gradient(to bottom, #333, #fff);
+  color: #fff;
+  padding-top: 12vh;
+}

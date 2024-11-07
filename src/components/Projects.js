@@ -6,7 +6,7 @@ const Projects = () => {
   const { projects } = require('../constants/index.js')
   return (
     <div className='projects'>
-      <h3 className='title'>Projects</h3>
+      <h3 className='title'>PROJECTS</h3>
       <div className='projects-container'>
         {projects.map((project, index) => (
           <div key={index} className='project'>

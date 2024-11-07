@@ -4,23 +4,12 @@ import '../styles/navbar.css'
 const Navbar = ({ scrollToSection, activeSection, showNavbar }) => {
   return (
     <nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
-      <img
-        src='turtel.png'
-        alt='logo'
-        onClick={() => scrollToSection('home')}
-      />
       <ul>
         <li
           className={activeSection === 'home' ? 'active' : ''}
           onClick={() => scrollToSection('home')}
         >
-          Me
-        </li>
-        <li
-          className={activeSection === 'about' ? 'active' : ''}
-          onClick={() => scrollToSection('about')}
-        >
-          Experience
+          Home
         </li>
         <li
           className={activeSection === 'services' ? 'active' : ''}
@@ -28,6 +17,13 @@ const Navbar = ({ scrollToSection, activeSection, showNavbar }) => {
         >
           Projects
         </li>
+        <li
+          className={activeSection === 'about' ? 'active' : ''}
+          onClick={() => scrollToSection('about')}
+        >
+          Experience
+        </li>
+
         <li
           className={activeSection === 'contact' ? 'active' : ''}
           onClick={() => scrollToSection('contact')}
