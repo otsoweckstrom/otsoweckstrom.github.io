@@ -8,11 +8,12 @@ const Projects = () => {
     <div className='projects'>
       <h3 className='title'>PROJECTS</h3>
       <h2 className='subtitle'>
-        These are some of my favorite personal projects.
-        <p className='line'></p> I've also worked on multiple professional
-        projects but unfortunately I can't share those here
+        I've also worked on multiple professional projects but unfortunately I
+        can't share those here
         <p className='line'></p>
-        I'm more than happy to talk about them though if you're interested!
+        I'm more than happy to talk about them though if you're interested!{' '}
+        <p className='line'></p>
+        Here are some of my favorite personal projects.{' '}
       </h2>
 
       <div className='projects-container'>

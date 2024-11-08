@@ -180,7 +180,7 @@ const experiences = [
     company_name: 'LUT University',
     icon: lut,
     iconBg: '#000',
-    date: '2021',
+    date: '2022',
     points: ['"I think I can see light at the end of the tunnel"'],
   },
   {
