@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/about.css'
 import '../constants/index.js'
-import Experience from './ExoerienceTimeline'
+import Experience from './ExperienceTimeline.jsx'
 
 const About = () => {
   const { experiences } = require('../constants/index.js')

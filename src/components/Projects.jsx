@@ -10,10 +10,10 @@ const Projects = () => {
       <h2 className='subtitle'>
         I've also worked on multiple professional projects but unfortunately I
         can't share those here
-        <p className='line'></p>
-        I'm more than happy to talk about them though if you're interested!{' '}
-        <p className='line'></p>
-        Here are some of my favorite personal projects.{' '}
+        <p className='line'>
+          I'm more than happy to talk about them though if you're interested!
+        </p>
+        <p className='line'> Here are some of my favorite personal projects.</p>
       </h2>
 
       <div className='projects-container'>
@@ -46,7 +46,7 @@ const Projects = () => {
               </a>
               <a
                 className='project-source'
-                href={project.source_code_link}
+                href={project.youtube_link}
                 target='_blank'
                 rel='noopener noreferrer'
               >
