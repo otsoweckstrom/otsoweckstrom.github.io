@@ -74,10 +74,10 @@ const App = () => {
           <Home />
         </section>
         <section ref={servicesRef} id='services'>
-          <Projects />
+          <About />
         </section>
         <section ref={aboutRef} id='about'>
-          <About />
+          <Projects />
         </section>
 
         <section ref={contactRef} id='contact'>

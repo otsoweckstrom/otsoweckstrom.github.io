@@ -49,11 +49,11 @@ const hello = [
 	{ line: 2, text: 'My name is Otso Weckström.' },
 	{
 		line: 3,
-		text: "I'm a software engineer from Helsinki, Finland and this is my portfolio.",
+		text: "I'm a software engineer from Helsinki, Finland.",
 	},
 	{
 		line: 4,
-		text: 'On here you can find some of my projects, my resume, and my socials',
+		text: '',
 	},
 	{
 		line: 5,
