@@ -1,118 +1,118 @@
 .projects {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100;
-  background-image: linear-gradient(to bottom, #fff, #333);
-  color: #fff;
-  padding-top: 12vh;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #fff, #333);
+	color: #fff;
+	padding-top: 12vh;
 }
 
 .title {
-  text-align: center;
-  margin: 0;
-  color: #333;
-  font-family: monospace;
-  font-size: 4em;
-  opacity: 0.6;
-  margin-bottom: 2.5vh;
-  margin-top: 4vh;
+	text-align: center;
+	margin: 0;
+	color: #333;
+	font-family: monospace;
+	font-size: 4em;
+	opacity: 0.6;
+	margin-bottom: 2.5vh;
+	margin-top: 4vh;
 }
 
 .subtitle {
-  text-align: center;
-  color: #333;
-  font-family: monospace;
-  font-size: 1.8em;
-  margin-bottom: 12vh;
-  opacity: 0.5;
+	text-align: center;
+	color: #333;
+	font-family: monospace;
+	font-size: 1.8em;
+	margin-bottom: 12vh;
+	opacity: 0.5;
 }
 .line {
-  margin: 0.6vh;
+	margin: 0.6vh;
 }
 
 .projects-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20vh;
 }
 .project {
-  font-family: monospace;
-  transition: background-color 0.5s ease, border-color 0.5s ease;
-  background-color: #333;
-  flex: 0 0 50%;
-  max-width: 45%;
-  min-width: 35%;
+	font-family: monospace;
+	transition: background-color 0.5s ease, border-color 0.5s ease;
+	background-color: #333;
+	flex: 0 0 50%;
+	max-width: 42%;
+	min-width: 35%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  border: 2px solid #a5a5a5;
-  border-radius: 1vh;
-  padding: 0 1.5rem 1rem 1.5rem;
-  margin: 0 2rem 4rem 2rem;
+	border: 2px solid #a5a5a5;
+	border-radius: 1vh;
+	padding: 0 1.5rem 1rem 1.5rem;
+	margin: 0 2rem 4rem 2rem;
 }
 
 .project-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40vh;
 }
 .project-image {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1vh;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1vh;
 }
 .project-title {
-  text-align: center;
-  font-size: 2em;
-  margin-top: 2rem;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 2rem;
 }
 
 .project-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .project-description {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .project-source {
-  display: flex;
-  color: #fff;
-  font-size: 1.1em;
+	display: flex;
+	color: #fff;
+	font-size: 1.1em;
 }
 
 .tags {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 1em;
 }
 
 .tags .tag {
-  margin: 0.5rem;
+	margin: 0.5rem;
 }
 
 .project:hover {
-  transition: background-color 0.5s ease, border-color 0.5s ease,
-    border-style 0.5s ease;
-  background-color: #505050;
-  border-color: #505050;
-  border-style: solid;
+	transition: background-color 0.5s ease, border-color 0.5s ease,
+		border-style 0.5s ease;
+	background-color: #505050;
+	border-color: #505050;
+	border-style: solid;
 }
 
 .links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
