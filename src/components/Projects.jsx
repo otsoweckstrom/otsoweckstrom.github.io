@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/projects.css'
 import '../constants/index.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = () => {
 	const { projects } = require('../constants/index.js')
 
+	// Visibility state for each category
+	const [visibility, setVisibility] = useState({
+		'Data & Machine Learning': true,
+		'Frontend & UI': false,
+	})
+
+	// Group projects by category
 	const groupedProjects = projects.reduce((acc, project) => {
 		const category = project.category || 'Other'
 		if (!acc[category]) acc[category] = []
@@ -22,7 +31,6 @@ const Projects = () => {
 					Here I've collected some of the products of all that trial
 					and error, please have a look around.
 				</p>
-
 				<p className="line">
 					I’ve included source code and demos for my personal projects
 					so you can explore them further.
@@ -39,8 +47,35 @@ const Projects = () => {
 			<div className="projects-container">
 				{Object.entries(groupedProjects).map(([category, projects]) => (
 					<div key={category} className="project-category">
-						<h3 className="category-title">{category} Projects</h3>
-						<div className="project-list">
+						{/* Toggle Visibility */}
+						<h3
+							className="category-title"
+							onClick={() =>
+								setVisibility((prevVisibility) => ({
+									...prevVisibility,
+									[category]: !prevVisibility[category],
+								}))
+							}
+						>
+							{category} Projects
+							<FontAwesomeIcon
+								icon={faChevronDown}
+								className={`arrow ${
+									visibility[category]
+										? 'arrow-expanded'
+										: 'arrow-collapsed'
+								}`}
+							/>
+						</h3>
+
+						{/* Conditionally Render project-list */}
+						<div
+							className={`project-list ${
+								visibility[category]
+									? 'project-list-visible'
+									: ''
+							}`}
+						>
 							{projects.map((project, index) => (
 								<div key={index} className="project">
 									<h3 className="project-title">

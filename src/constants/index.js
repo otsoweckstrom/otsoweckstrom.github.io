@@ -261,7 +261,7 @@ const projects = [
 		description:
 			'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
 		tags: [{ name: 'React' }, { name: 'JavaScript' }, { name: 'CSS' }],
-		category: 'Frontend & UI',
+		category: 'Full-Stack Web Applications',
 		image: portfolio,
 		source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
 	},
