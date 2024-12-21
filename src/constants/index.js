@@ -61,8 +61,6 @@ const hello = [
 	},
 ]
 
-const services = []
-
 const technologies = [
 	{
 		name: 'HTML 5',
@@ -227,53 +225,23 @@ const experiences = [
 	},
 ]
 
-const testimonials = []
-
 const projects = [
 	{
-		name: 'League of Legends AI prediction',
+		name: 'League of Legends AI Prediction',
 		description:
 			'An extensive AI project which predicts the win rate of the next game and the highest winrate choice based on the lobby.',
-		tags: [
-			{
-				name: 'python',
-			},
-			{
-				name: 'Tensorflow',
-			},
-		],
+		tags: [{ name: 'Python' }, { name: 'TensorFlow' }],
+		category: 'Data & Machine Learning',
 		image: league,
 		source_code_link:
 			'https://github.com/otsoweckstrom/AI-Win-Prediction-League',
 	},
 	{
-		name: 'This Website',
-		description:
-			'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
-		tags: [
-			{
-				name: 'React',
-			},
-			{
-				name: 'JavaScript',
-			},
-			{
-				name: 'CSS',
-			},
-		],
-		image: portfolio,
-		source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
-	},
-	{
 		name: 'Credit Card Classification Algorithm',
 		description:
-			'A Machine Learning model to predict credit card category based on customer data. The project utilizes multiple ML and data analysis techniques such as data cleaning, feature engineering, and building predictive models using linear regression and random forest techniques. The project also explores model evaluation methods such as AUROC and k-fold cross-validation.',
-
-		tags: [
-			{
-				name: 'R',
-			},
-		],
+			'A Machine Learning model to predict credit card category based on customer data using linear regression and random forest techniques. Includes data cleaning, feature engineering, and model evaluation.',
+		tags: [{ name: 'R' }],
+		category: 'Data & Machine Learning',
 		image: creditcard,
 		source_code_link:
 			'https://github.com/otsoweckstrom/credit_AI/tree/main',
@@ -281,82 +249,56 @@ const projects = [
 	{
 		name: 'Reddit Comment Scraper',
 		description:
-			'The script scrapes each comment section of a chosen subreddits posts and orders the words found from most common to least common as well as creates a wordcloud based on the word counts.',
-		tags: [
-			{
-				name: 'python',
-			},
-		],
+			'Scrapes subreddit posts, orders words by frequency, and generates a wordcloud.',
+		tags: [{ name: 'Python' }],
+		category: 'Data & Machine Learning',
 		image: wordcloud,
 		source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
 		youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
 	},
 	{
-		name: 'Machine vision shooting range Demo',
+		name: 'This Website',
 		description:
-			'A computer vision application developed for a finnish gun manufacturer as part of a competitive demo. The demo detects orange-colored objects and alerts the user, aimed at ensuring safety by identifying items such as hunter safety vests in front of firearms.',
-		tags: [{ name: 'Python' }, { name: 'OpenCV' }],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
+			'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
+		tags: [{ name: 'React' }, { name: 'JavaScript' }, { name: 'CSS' }],
+		category: 'Frontend & UI',
+		image: portfolio,
+		source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
 	},
 	{
 		name: 'Polamk - Work Help Finland',
 		description:
-			'A mobile application aimed at immigrants and asylum seekers in Finland. The app provides information about their rights, particularly in labor law, to reduce workplace exploitation.',
+			'A mobile app aimed at providing immigrants with labor law information to reduce workplace exploitation.',
 		tags: [
 			{ name: 'React Native' },
 			{ name: 'Android' },
 			{ name: 'iOS' },
 			{ name: 'CSS' },
 		],
+		category: 'Mobile Development',
 		image: null, // Add an image if available
-		source_code_link:
+		source_code_link: '',
+		app_link:
 			'https://apps.apple.com/fi/app/work-help-finland/id1626783832',
-	},
-	{
-		name: 'Absentus',
-		description:
-			'A full-scale web application for funeral services, allowing users to reserve and manage tasks related to grave sites, such as booking, maintenance, and tombstone selection.',
-		tags: [
-			{ name: 'React' },
-			{ name: 'TypeScript' },
-			{ name: 'JavaScript' },
-			{ name: 'CSS' },
-			{ name: 'AWS' },
-		],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
 	},
 	{
 		name: 'Mukify - Moomin Mug Store & Collection App',
 		description:
-			'An application designed for buying and tracking ceramic products, particularly Moomin mugs. The app features a marketplace-style frontend for seamless browsing and collection management.',
+			'A marketplace-style app for managing and purchasing ceramic collectibles, featuring a seamless UI.',
 		tags: [
 			{ name: 'TypeScript' },
 			{ name: 'CSS' },
 			{ name: 'Next.js' },
 			{ name: 'GraphQL' },
 		],
+		category: 'Frontend & UI',
 		image: null, // Add an image if available
-		source_code_link: 'https://apps.apple.com/fi/app/mukify/id1608787906',
-	},
-	{
-		name: 'PAM-tes Android App Refactor',
-		description:
-			'Refactored and updated an existing Android application that allows users to check collective labor agreements for various industries. The update included replacing outdated links, removing deprecated functionalities, and fixing a few bugs.',
-		tags: [
-			{ name: 'Android' },
-			{ name: 'Java' },
-			{ name: 'XML' },
-			{ name: 'JSON' },
-		],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
+		app_link: 'https://apps.apple.com/fi/app/mukify/id1608787906',
 	},
 	{
 		name: 'Kuljetustilausten Hallintajärjestelmä',
 		description:
-			'A full-scale web application developed to replace an old manual logistics system for a transportation company. The new system allows managers to track and manage deliveries, assign tasks to drivers, and prepare billing, all within a web interface.',
+			'A full-scale logistics system for task assignment, delivery tracking, and billing management.',
 		tags: [
 			{ name: 'TypeScript' },
 			{ name: 'JavaScript' },
@@ -364,13 +306,14 @@ const projects = [
 			{ name: 'CSS' },
 			{ name: 'AWS' },
 		],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
+		category: 'Full-Stack Web Applications',
+		image: null,
+		source_code_link: null,
 	},
 	{
 		name: 'Mittaussovelluksen Päivittäminen',
 		description:
-			'Updated and continued development of a web-based measurement application, including upgrading to the latest software versions and adding new features. The application runs on Azure and uses various technologies for backend and database management.',
+			'Upgraded a web-based measurement application with new features and improved backend and database management.',
 		tags: [
 			{ name: 'JavaScript' },
 			{ name: 'Node.js' },
@@ -379,13 +322,14 @@ const projects = [
 			{ name: 'MongoDB' },
 			{ name: 'CertBot' },
 		],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
+		category: 'Full-Stack Web Applications',
+		image: null,
+		source_code_link: null,
 	},
 	{
 		name: 'Food Tracking App',
 		description:
-			'A food tracking application that enables users to add meals either by manually inputting data or by taking a picture of a menu. The app processes the menu using ChatGPT and retrieves food nutrition and environmental impact information from a database. My contributions included engineering the backend to process and structure the database data for use in the project, developing a script to format the data into an SQL-compatible format, and implementing features such as statistics visualization, user registration, profile management, and backend API routes.',
+			'A food tracking application using ChatGPT to analyze menu data and display nutritional and environmental impact information.',
 		tags: [
 			{ name: 'JavaScript' },
 			{ name: 'SQL' },
@@ -395,9 +339,10 @@ const projects = [
 			{ name: 'CSS' },
 			{ name: 'API' },
 		],
-		image: null, // Add an image if available
-		source_code_link: null, // Add a link if public code is available
+		category: 'Full-Stack Web Applications',
+		image: null,
+		source_code_link: null,
 	},
 ]
 
-export { services, technologies, experiences, testimonials, projects, hello }
+export { technologies, experiences, projects, hello }

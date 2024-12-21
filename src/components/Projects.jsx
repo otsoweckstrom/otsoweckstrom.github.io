@@ -4,57 +4,84 @@ import '../constants/index.js'
 
 const Projects = () => {
 	const { projects } = require('../constants/index.js')
+
+	const groupedProjects = projects.reduce((acc, project) => {
+		const category = project.category || 'Other'
+		if (!acc[category]) acc[category] = []
+		acc[category].push(project)
+		return acc
+	}, {})
+
 	return (
-		<div className="projects">
-			<h3 className="title">PROJECTS</h3>
+		<div className="projects-section-container">
+			<p className="title">PROJECTS</p>
 			<h2 className="subtitle">
 				<p className="line">
-					While I can’t share some of my professional work here, I’d
-					be happy to discuss it if you're curious!
+					I've tinkered with all kinds of things throughout the years.
+					<br />
+					Here I've collected some of the products of all that trial
+					and error, please have a look around.
 				</p>
+
 				<p className="line">
-					Take a look at some of my favorite personal projects below.
+					I’ve included source code and demos for my personal projects
+					so you can explore them further.
+					<br />
+					Projects without source code are professional consulting
+					work that I’m unable to share in more detail on the
+					internet.
+				</p>
+				<p>
+					Happy to talk more about any of the projects over a coffee!
 				</p>
 			</h2>
 
 			<div className="projects-container">
-				{projects.map((project, index) => (
-					<div key={index} className="project">
-						<h3 className="project-title">{project.name}</h3>
-						<p className="project-description">
-							{project.description}
-						</p>
-						<div className="project-image-container">
-							<img
-								src={project.image}
-								alt={project.name}
-								className="project-image"
-							/>
-						</div>
-						<div className="tags">
-							{project.tags.map((tag, index) => (
-								<div key={index} className="tag">
-									<p>{tag.name}</p>
+				{Object.entries(groupedProjects).map(([category, projects]) => (
+					<div key={category} className="project-category">
+						<h3 className="category-title">{category} Projects</h3>
+						<div className="project-list">
+							{projects.map((project, index) => (
+								<div key={index} className="project">
+									<h3 className="project-title">
+										{project.name}
+									</h3>
+									<div className="project-content">
+										<p className="project-description">
+											{project.description}
+										</p>
+									</div>
+									<div className="tags">
+										{project.tags.map((tag, idx) => (
+											<div key={idx} className="tag">
+												<p>{tag.name}</p>
+											</div>
+										))}
+									</div>
+									<div className="links-container">
+										{project.source_code_link && (
+											<a
+												href={project.source_code_link}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="project-source"
+											>
+												Source Code
+											</a>
+										)}
+										{project.youtube_link && (
+											<a
+												href={project.youtube_link}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="project-source"
+											>
+												Video Demo
+											</a>
+										)}
+									</div>
 								</div>
 							))}
-						</div>
-						<div className="links-container">
-							<a
-								className="project-source"
-								href={project.source_code_link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{project.source_code_link}
-							</a>
-							<a
-								className="project-source"
-								href={project.youtube_link}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{project.youtube_link}
-							</a>
 						</div>
 					</div>
 				))}

@@ -1,104 +1,103 @@
 /* Experience.css */
 
 .section-header {
-  text-align: center;
-  margin-bottom: 3vh;
+	text-align: center;
+	margin-bottom: 3vh;
+	padding-top: 10vh;
 }
 
 .section-head-text {
-  text-align: center;
-  margin: 0;
-  color: #ffffff;
-  font-family: monospace;
-  font-size: 4em;
-  opacity: 0.6;
-  margin-bottom: 2.5vh;
+	text-align: center;
+	margin: 0;
+	color: var(--color-white);
+	font-family: monospace;
+	font-size: 8em;
+
+	margin-bottom: 2.5vh;
 }
 
 .section-sub-text {
-  text-align: center;
-  color: #ffffff;
-  font-family: monospace;
-  font-size: 1.8em;
-  opacity: 0.4;
+	text-align: center;
+	color: var(--color-white);
+	font-family: monospace;
+	font-size: 1.8em;
 }
 
 .timeline-container {
-  display: flex;
-  flex-direction: column;
-  z-index: 0;
-  font-family: monospace;
+	display: flex;
+	flex-direction: column;
+	font-family: monospace;
 }
 
 .experience-card {
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 .experience-card-content {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .experience-icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #ffffff;
-  width: 60px;
-  height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: var(--color-white);
+	width: 60px;
+	height: 60px;
 }
 
 .experience-card:nth-child(1) .experience-icon-wrapper {
-  background-color: #000000;
+	background-color: #000000;
 }
 
 .experience-card:nth-child(3) .experience-icon-wrapper {
-  background-color: #000000;
+	background-color: #000000;
 }
 
 .experience-icon {
-  width: 80%;
-  height: auto;
-  border-radius: 50%;
+	width: 80%;
+	height: auto;
+	border-radius: 50%;
 }
 
 .experience-title {
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: -5px;
-  margin-top: 0;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #333;
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: var(--color-text-main);
+	margin-bottom: -5px;
+	margin-top: 0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #333;
 }
 
 .experience-card:nth-child(even) .experience-title {
-  text-align: start;
+	text-align: start;
 }
 .experience-card:nth-child(odd) .experience-title {
-  text-align: start;
+	text-align: start;
 }
 
 .experience-company {
-  font-size: 1.3em;
-  color: #696969;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 2px;
+	font-size: 1.3em;
+	color: #696969;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 2px;
 }
 
 .experience-points {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .experience-point {
-  font-size: 1.3em;
+	font-size: 1.3em;
 
-  color: #343434;
-  margin-bottom: 8px;
-  padding: 5px;
+	color: #343434;
+	margin-bottom: 8px;
+	padding: 5px;
 }

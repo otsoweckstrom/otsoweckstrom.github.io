@@ -1,34 +1,39 @@
-.projects {
+.projects-section-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to bottom, #fff, #333);
-	color: #fff;
-	padding-top: 12vh;
+	padding-top: 14vh;
+	background-size: cover;
+	background-color: var(--color-white);
+	opacity: 1;
+	margin-bottom: 10vh;
 }
 
 .title {
 	text-align: center;
 	margin: 0;
-	color: #333;
+	color: var(--color-black);
 	font-family: monospace;
-	font-size: 4em;
-	opacity: 0.6;
-	margin-bottom: 2.5vh;
+	font-size: 8em;
+
 	margin-top: 4vh;
+	margin-bottom: 6vh;
 }
 
 .subtitle {
 	text-align: center;
-	color: #333;
+	color: var(--color-black);
 	font-family: monospace;
 	font-size: 1.8em;
-	margin-bottom: 12vh;
-	opacity: 0.5;
+	opacity: 0.6;
+	padding: 0 10vw;
+	line-height: 2em;
+
+	margin-bottom: 26vh;
 }
 .line {
-	margin: 0.6vh;
+	margin-bottom: 4vh;
 }
 
 .projects-container {
@@ -36,15 +41,41 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 20vh;
+	margin-bottom: 10vh;
+	padding: 0 6vw;
 }
+
+.project-category {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 10vh;
+}
+
+.category-title {
+	color: #333;
+	font-family: monospace;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
+	margin-bottom: 8vh;
+}
+
+.project-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2vw;
+}
+
 .project {
 	font-family: monospace;
+	color: #333;
 	transition: background-color 0.5s ease, border-color 0.5s ease;
-	background-color: #333;
-	flex: 0 0 50%;
-	max-width: 42%;
-	min-width: 35%;
+	background-color: #fff;
+	flex: 1;
+	max-width: 60%;
 
 	display: flex;
 	flex-direction: column;
@@ -54,22 +85,10 @@
 	border-radius: 1vh;
 	padding: 0 1.5rem 1rem 1.5rem;
 	margin: 0 2rem 4rem 2rem;
+
+	opacity: 0.7;
 }
 
-.project-image-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 40vh;
-}
-.project-image {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 1vh;
-}
 .project-title {
 	text-align: center;
 	font-size: 2em;
@@ -88,7 +107,7 @@
 
 .project-source {
 	display: flex;
-	color: #fff;
+	color: var(--color-link);
 	font-size: 1.1em;
 }
 
@@ -104,11 +123,13 @@
 }
 
 .project:hover {
-	transition: background-color 0.5s ease, border-color 0.5s ease,
+	transition: background-image 0.8s ease-in, border-color 0.5s ease,
 		border-style 0.5s ease;
-	background-color: #505050;
-	border-color: #505050;
+	background-image: linear-gradient(180deg, var(--color-link), #b4f6e9);
+
 	border-style: solid;
+	opacity: 1;
+	scale: 1.02;
 }
 
 .links-container {
