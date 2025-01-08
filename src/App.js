@@ -79,9 +79,9 @@ const App = () => {
 				<section ref={aboutRef} id="about">
 					<About />
 				</section>
-				<section ref={contactRef} id="contact">
+				{/* <section ref={contactRef} id="contact">
 					<Contact />
-				</section>
+				</section> */}
 			</div>
 		</div>
 	)
