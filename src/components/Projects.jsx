@@ -47,7 +47,6 @@ const Projects = () => {
 			<div className="projects-container">
 				{Object.entries(groupedProjects).map(([category, projects]) => (
 					<div key={category} className="project-category">
-						{/* Toggle Visibility */}
 						<h3
 							className="category-title"
 							onClick={() =>
@@ -68,7 +67,6 @@ const Projects = () => {
 							/>
 						</h3>
 
-						{/* Conditionally Render project-list */}
 						<div
 							className={`project-list ${
 								visibility[category]
@@ -77,7 +75,14 @@ const Projects = () => {
 							}`}
 						>
 							{projects.map((project, index) => (
-								<div key={index} className="project">
+								<div
+									key={index}
+									className={
+										projects.length % 2 === 0
+											? 'project-even'
+											: 'project-odd'
+									}
+								>
 									<h3 className="project-title">
 										{project.name}
 									</h3>

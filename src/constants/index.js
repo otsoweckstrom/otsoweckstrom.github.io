@@ -291,8 +291,8 @@ const projects = [
 			{ name: 'Next.js' },
 			{ name: 'GraphQL' },
 		],
-		category: 'Frontend & UI',
-		image: null, // Add an image if available
+		category: 'Mobile Development',
+		image: null,
 		app_link: 'https://apps.apple.com/fi/app/mukify/id1608787906',
 	},
 	{
@@ -322,10 +322,27 @@ const projects = [
 			{ name: 'MongoDB' },
 			{ name: 'CertBot' },
 		],
-		category: 'Full-Stack Web Applications',
+		category: '',
 		image: null,
 		source_code_link: null,
 	},
+	{
+		name: 'F-Secure Security Awareness App',
+		description:
+			"Developed a school competition app for F-Secure to inform the public about potential security vulnerabilities in their devices. Integrated a known vulnerability database, rewritten by ChatGPT into layman's terms. Designed a visual UI with a danger meter to present issues effectively.",
+		role: 'Scrum Master, leading the team to achieve 1st place in the competition.',
+		tags: [
+			{ name: 'JavaScript' },
+			{ name: 'React' },
+			{ name: 'Node.js' },
+			{ name: 'CSS' },
+			{ name: 'OpenAI API' },
+		],
+		category: 'Full-Stack Web Applications',
+		image: null,
+		source_code_link: 'https://github.com/RASP-Team-H/f-secure-iot',
+	},
+
 	{
 		name: 'Food Tracking App',
 		description:
@@ -339,9 +356,30 @@ const projects = [
 			{ name: 'CSS' },
 			{ name: 'API' },
 		],
-		category: 'Full-Stack Web Applications',
+		category: 'Mobile Development',
 		image: null,
 		source_code_link: null,
+	},
+	{
+		name: 'Democracy Chamber',
+		description:
+			'An open platform for meaningful, democratic political discussion. The app is designed to promote constructive, open political debates, encouraging community-based engagement and providing citizens with tools to influence decision-making. Key features include discussion threads, anonymous participation, policymaker polls, and community moderation.',
+		key_features: [
+			'Discussion Threads: Users can present opinions, vote, and share thoughts on various topics.',
+			'Policymaker Polls: Invite-only polls for targeted demographics with insights provided by Pol.is integration.',
+			'Anonymous Participation: Ensures privacy for users in discussions.',
+			'Community Moderation: Maintains respectful and constructive discourse.',
+		],
+		tags: [
+			{ name: 'JavaScript' },
+			{ name: 'React' },
+			{ name: 'Node.js' },
+			{ name: 'CSS' },
+			{ name: 'Pol.is Integration' },
+		],
+		category: 'Full-Stack Web Applications',
+		image: null,
+		source_code_link: 'https://github.com/otsoweckstrom/democracy_chamber',
 	},
 ]
 
