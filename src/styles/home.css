@@ -1,0 +1,97 @@
+.home {
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex;
+  margin-bottom: 40vh;
+}
+
+.home-img {
+  opacity: 0;
+  animation: fadein 3s ease-in-out forwards;
+}
+
+.typewriter-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.typing {
+  width: var(--width);
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  font-family: monospace;
+  font-size: 2.4em;
+  margin-left: 12vw;
+}
+
+.typing:nth-child(1) {
+  animation: typing var(--typing) steps(var(--steps), end) forwards,
+    blink 0.5s var(--blink) forwards;
+}
+
+.typing:nth-child(2) {
+  animation: typing var(--typing) steps(var(--steps), end) forwards,
+    blink 0.5s 7 forwards;
+  animation-delay: 2s;
+  margin-top: 1vh;
+}
+
+.typing:nth-child(3) {
+  animation: typing var(--typing) steps(var(--steps), end) forwards,
+    blink 0.5s 9 forwards;
+  animation-delay: 5s;
+  margin-top: 3vh;
+}
+.typing:nth-child(4) {
+  animation: typing var(--typing) steps(var(--steps), end) forwards,
+    blink 0.5s 15 forwards;
+  animation-delay: 16s;
+  margin-top: 1vh;
+}
+.typing:nth-child(5) {
+  animation: typing var(--typing) steps(var(--steps), end) forwards,
+    blink 0.5s 17 forwards;
+  animation-delay: 24s;
+  margin-top: 10vh;
+}
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: var(--width);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    border-color: black;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
