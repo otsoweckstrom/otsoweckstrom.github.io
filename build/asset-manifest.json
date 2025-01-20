@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a71e4bc0.css",
+    "main.js": "/static/js/main.d99780ba.js",
+    "static/js/453.df876e38.chunk.js": "/static/js/453.df876e38.chunk.js",
+    "static/media/wordcloud_output.png": "/static/media/wordcloud_output.098c7ba2f0d4bf88ef63.png",
+    "static/media/seoultech.png": "/static/media/seoultech.691397e703016d4f74c9.png",
+    "static/media/creditcard_project.png": "/static/media/creditcard_project.3c58c99301f58ffaa97b.png",
+    "static/media/twoday.png": "/static/media/twoday.ccf095ee5742ad578a8c.png",
+    "static/media/league_project.png": "/static/media/league_project.c0cdf809b91efa52c78e.png",
+    "static/media/visma.png": "/static/media/visma.07bb680f476f72451ebd.png",
+    "static/media/portfolio_project.png": "/static/media/portfolio_project.e69058ce06116c55f5b9.png",
+    "static/media/python.png": "/static/media/python.632369df831d16241b59.png",
+    "static/media/r.png": "/static/media/r.3f9dfcafc5d7d20c0270.png",
+    "static/media/lut.png": "/static/media/lut.88aeab8ff6ad360483ee.png",
+    "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
+    "static/media/unity.png": "/static/media/unity.3bfc3216d2afbeb578bd.png",
+    "static/media/logo-no-background.svg": "/static/media/logo-no-background.0bdc74b8cbb6bf798c24fda6e526d2c4.svg",
+    "static/media/close.svg": "/static/media/close.52ab0d39b2c514b8322115c951eac5a2.svg",
+    "static/media/menu.svg": "/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
+    "static/media/threejs.svg": "/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
+    "index.html": "/index.html",
+    "static/media/pytorch.svg": "/static/media/pytorch.0eda7da13fbfd4300cd9ab4c814763e3.svg",
+    "main.a71e4bc0.css.map": "/static/css/main.a71e4bc0.css.map",
+    "main.d99780ba.js.map": "/static/js/main.d99780ba.js.map",
+    "453.df876e38.chunk.js.map": "/static/js/453.df876e38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a71e4bc0.css",
+    "static/js/main.d99780ba.js"
+  ]
+}
