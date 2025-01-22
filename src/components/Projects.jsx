@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/projects.css'
 import ProjectCard from './ProjectCard'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -69,6 +70,12 @@ const Projects = () => {
             >
               {projects.map((project, index) => (
                 <ProjectCard
+                  styleType={
+                    project.category === 'Full-Stack Web Applications' ||
+                    project.category === ''
+                      ? 'alternative'
+                      : ''
+                  }
                   key={index}
                   title={project.name}
                   description={project.description}

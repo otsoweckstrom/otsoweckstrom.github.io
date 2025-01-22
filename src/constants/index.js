@@ -231,6 +231,7 @@ const projects = [
       'An extensive AI project which predicts the win rate of the next game and the highest winrate choice based on the lobby.',
     tags: [{ name: 'Python' }, { name: 'TensorFlow' }],
     category: 'Data & Machine Learning',
+    professional: false,
     image: league,
     source_code_link:
       'https://github.com/otsoweckstrom/AI-Win-Prediction-League',
@@ -241,6 +242,7 @@ const projects = [
       'A Machine Learning model to predict credit card category based on customer data using linear regression and random forest techniques. Includes data cleaning, feature engineering, and model evaluation.',
     tags: [{ name: 'R' }],
     category: 'Data & Machine Learning',
+    professional: false,
     image: creditcard,
     source_code_link: 'https://github.com/otsoweckstrom/credit_AI/tree/main',
   },
@@ -250,6 +252,7 @@ const projects = [
       'Scrapes subreddit posts, orders words by frequency, and generates a data visualizations.',
     tags: [{ name: 'Python' }],
     category: 'Data & Machine Learning',
+    professional: false,
     image: wordcloud,
     source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
     youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
@@ -260,6 +263,7 @@ const projects = [
       'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
     tags: [{ name: 'React' }, { name: 'JavaScript' }, { name: 'CSS' }],
     category: 'Full-Stack Web Applications',
+    professional: false,
     image: portfolio,
     source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
   },
@@ -340,6 +344,7 @@ const projects = [
       { name: 'OpenAI API' },
     ],
     category: 'Full-Stack Web Applications',
+    professional: false,
     image: null,
     source_code_link: 'https://github.com/RASP-Team-H/f-secure-iot',
   },
@@ -362,7 +367,8 @@ const projects = [
     image: null,
     source_code_link: null,
   },
-  {
+
+  /* {
     name: 'Democracy Chamber',
     description:
       'An open platform for  democratic political discussion. The app generates meaningful insights for politicians utilizing pol.is helping every citizens opinion be heard.',
@@ -380,9 +386,10 @@ const projects = [
       { name: 'Pol.is Integration' },
     ],
     category: 'Full-Stack Web Applications',
+    professional: false,
     image: null,
     source_code_link: 'https://github.com/otsoweckstrom/democracy_chamber',
-  },
+  },*/
 ]
 
 export { technologies, experiences, projects, hello }
