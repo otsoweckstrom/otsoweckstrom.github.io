@@ -9,7 +9,7 @@ const Projects = () => {
 
   // Visibility state for each category
   const [visibility, setVisibility] = useState({
-    'Data & Machine Learning': true,
+    'Data & Machine Learning': false,
     'Frontend & UI': false,
   })
 
