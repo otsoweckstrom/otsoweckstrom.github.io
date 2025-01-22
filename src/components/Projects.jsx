@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../styles/projects.css'
-import '../constants/index.js'
+import ProjectCard from './ProjectCard'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -35,8 +35,8 @@ const Projects = () => {
           I’ve included source code and demos for my personal projects so you
           can explore them further.
           <br />
-          Projects without source code are professional consulting work that I’m
-          unfortunately unable to share in more detail on the internet.
+          Projects without source code are professional consulting work that I
+          unfortunately can't share in more detail on the internet.
         </p>
         <p>Happy to talk more about any of the projects over a coffee! ☕</p>
       </h2>
@@ -68,41 +68,11 @@ const Projects = () => {
               }`}
             >
               {projects.map((project, index) => (
-                <div key={index} className='project-item'>
-                  <h3 className='project-title'>{project.name}</h3>
-                  <div className='project-content'>
-                    <p className='project-description'>{project.description}</p>
-                  </div>
-                  <div className='tags'>
-                    {project.tags.map((tag, idx) => (
-                      <div key={idx} className='tag'>
-                        <p>{tag.name}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <div className='links-container'>
-                    {project.source_code_link && (
-                      <a
-                        href={project.source_code_link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='project-source'
-                      >
-                        Source Code
-                      </a>
-                    )}
-                    {project.youtube_link && (
-                      <a
-                        href={project.youtube_link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='project-source'
-                      >
-                        Video Demo
-                      </a>
-                    )}
-                  </div>
-                </div>
+                <ProjectCard
+                  key={index}
+                  title={project.name}
+                  description={project.description}
+                ></ProjectCard>
               ))}
             </div>
           </div>

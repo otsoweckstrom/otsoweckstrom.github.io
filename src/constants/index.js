@@ -247,7 +247,7 @@ const projects = [
   {
     name: 'Reddit Comment Scraper',
     description:
-      'Scrapes subreddit posts, orders words by frequency, and generates a wordcloud.',
+      'Scrapes subreddit posts, orders words by frequency, and generates a data visualizations.',
     tags: [{ name: 'Python' }],
     category: 'Data & Machine Learning',
     image: wordcloud,
@@ -274,12 +274,13 @@ const projects = [
       { name: 'CSS' },
     ],
     category: 'Mobile Development',
-    image: null, // Add an image if available
+    professional: true,
+    image: null,
     source_code_link: '',
     app_link: 'https://apps.apple.com/fi/app/work-help-finland/id1626783832',
   },
   {
-    name: 'Mukify - Moomin Mug Store & Collection App',
+    name: 'Mukify - Moomin Mug Store',
     description:
       'A marketplace-style app for managing and purchasing ceramic collectibles, featuring a seamless UI.',
     tags: [
@@ -289,6 +290,7 @@ const projects = [
       { name: 'GraphQL' },
     ],
     category: 'Mobile Development',
+    professional: true,
     image: null,
     app_link: 'https://apps.apple.com/fi/app/mukify/id1608787906',
   },
@@ -304,6 +306,7 @@ const projects = [
       { name: 'AWS' },
     ],
     category: 'Full-Stack Web Applications',
+    professional: true,
     image: null,
     source_code_link: null,
   },
@@ -320,6 +323,7 @@ const projects = [
       { name: 'CertBot' },
     ],
     category: '',
+    professional: true,
     image: null,
     source_code_link: null,
   },
@@ -354,13 +358,14 @@ const projects = [
       { name: 'API' },
     ],
     category: 'Mobile Development',
+    professional: true,
     image: null,
     source_code_link: null,
   },
   {
     name: 'Democracy Chamber',
     description:
-      'An open platform for meaningful, democratic political discussion. The app is designed to promote constructive, open political debates, encouraging community-based engagement and providing citizens with tools to influence decision-making. Key features include discussion threads, anonymous participation, policymaker polls, and community moderation.',
+      'An open platform for  democratic political discussion. The app generates meaningful insights for politicians utilizing pol.is helping every citizens opinion be heard.',
     key_features: [
       'Discussion Threads: Users can present opinions, vote, and share thoughts on various topics.',
       'Policymaker Polls: Invite-only polls for targeted demographics with insights provided by Pol.is integration.',
