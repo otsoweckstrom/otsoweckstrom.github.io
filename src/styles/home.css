@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex;
-  margin-bottom: 40vh;
 }
 
 .home-img {
@@ -16,6 +15,7 @@
 .typewriter-container {
   display: flex;
   flex-direction: column;
+  min-width: 100vw;
 }
 
 .typing {
@@ -93,5 +93,23 @@
   }
   100% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+    align-items: center;
+  }
+  .typing {
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .typewriter-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 96vw;
+    padding: 4vw;
   }
 }

@@ -36,9 +36,9 @@ const Projects = () => {
           can explore them further.
           <br />
           Projects without source code are professional consulting work that I’m
-          unable to share in more detail on the internet.
+          unfortunately unable to share in more detail on the internet.
         </p>
-        <p>Happy to talk more about any of the projects over a coffee!</p>
+        <p>Happy to talk more about any of the projects over a coffee! ☕</p>
       </h2>
 
       <div className='projects-container'>
@@ -68,12 +68,7 @@ const Projects = () => {
               }`}
             >
               {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className={
-                    projects.length % 2 === 0 ? 'project-even' : 'project-odd'
-                  }
-                >
+                <div key={index} className='project-item'>
                   <h3 className='project-title'>{project.name}</h3>
                   <div className='project-content'>
                     <p className='project-description'>{project.description}</p>
