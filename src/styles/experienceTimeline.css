@@ -103,17 +103,75 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section-header {
+    text-align: center;
+    margin-bottom: 3vh;
+    padding-top: 0vh;
+  }
+
+  .section-head-text {
+    text-align: center;
+    margin: 0;
+    color: var(--color-white);
+    font-family: monospace;
+    font-size: 3.4em;
+    margin-bottom: 1.5vh;
+  }
+
+  .section-sub-text {
+    text-align: center;
+    color: var(--color-white);
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+  }
+
+  .experience-card {
+    border-radius: 8px;
+  }
+
+  .experience-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .experience-icon-wrapper {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    width: 60px;
+    height: 60px;
+  }
+
+  .experience-card:nth-child(1) .experience-icon-wrapper {
+    background-color: #000000;
+  }
+
+  .experience-card:nth-child(3) .experience-icon-wrapper {
+    background-color: #000000;
   }
 
   .experience-icon {
-    width: 70%;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
   }
 
   .experience-title {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-text-main);
+    margin-bottom: -5px;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
   }
 
   .experience-card:nth-child(even) .experience-title {
@@ -124,14 +182,25 @@
   }
 
   .experience-company {
-    font-size: 1em;
+    font-size: 1.3em;
+    color: #696969;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 2px;
   }
 
   .experience-points {
-    padding-left: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .experience-point {
-    font-size: 1em;
+    font-size: 1.3em;
+
+    color: #343434;
+    margin-bottom: 8px;
+    padding: 5px;
   }
 }
