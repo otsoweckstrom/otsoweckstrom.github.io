@@ -41,7 +41,7 @@ const Experience = () => {
   return (
     <>
       <div className='section-header'>
-        <h2 className='section-head-text'>Dev Experience</h2>
+        <h2 className='section-head-text'>Work Experience</h2>
         <p className='section-sub-text'>A summary of what I've been up to</p>
       </div>
       <div className='timeline-container'>
