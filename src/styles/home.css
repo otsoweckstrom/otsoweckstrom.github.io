@@ -29,6 +29,60 @@
   margin-left: 12vw;
 }
 
+.socials {
+  display: flex;
+  min-width: 100vw;
+  margin-left: 12vw;
+  gap: 2rem;
+  margin-top: 10vh;
+  opacity: 0;
+  animation: fadeInBottomToTop 1s ease-in-out forwards;
+  animation-delay: 9s;
+  animation-duration: 3s;
+}
+
+.socials a {
+  color: black;
+}
+
+.socials a:hover {
+  color: rgb(45, 45, 45);
+}
+
+.scroll-down {
+  font-family: monospace;
+  font-size: 1.4em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 4vh;
+  opacity: 0;
+  animation: fadeInBottomToTop 1s ease-in-out alternate infinite;
+  animation-delay: 10s;
+  animation-duration: 3s;
+}
+
+.hidden {
+  animation: fadeOutBottomToTop 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInBottomToTop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutBottomToTop {
+  0% {
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .typing:nth-child(1) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
     blink 0.5s var(--blink) forwards;
@@ -36,21 +90,21 @@
 
 .typing:nth-child(2) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 7 forwards;
-  animation-delay: 2s;
+    blink 0.5s 5 forwards;
+  animation-delay: 1.5s;
   margin-top: 1vh;
 }
 
 .typing:nth-child(3) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 9 forwards;
-  animation-delay: 5s;
+    blink 0.5s 8 forwards;
+  animation-delay: 4s;
   margin-top: 3vh;
 }
 .typing:nth-child(4) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 15 forwards;
-  animation-delay: 16s;
+    blink 0.5s 5 forwards;
+  animation-delay: 8s;
   margin-top: 1vh;
 }
 .typing:nth-child(5) {
@@ -108,6 +162,21 @@
   .typewriter-container {
     display: flex;
     flex-direction: column;
-    min-width: 0;
+    min-width: 350px;
+  }
+
+  .socials {
+    display: flex;
+    min-width: 100vw;
+    margin-left: -1.4vw;
+    gap: 1.5rem;
+    margin-top: 4vh;
+    scale: 0.8;
+  }
+
+  .scroll-down {
+    font-size: 1em;
+
+    margin-bottom: 4vh;
   }
 }
