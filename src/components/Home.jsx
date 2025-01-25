@@ -16,7 +16,7 @@ const HomePage = () => {
   const [isVisible, setIsVisible] = useState(true)
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         setIsVisible(false)
       }
     }

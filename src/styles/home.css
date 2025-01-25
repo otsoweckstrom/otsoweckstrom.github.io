@@ -65,7 +65,6 @@
 
 .hidden {
   animation: fadeOutBottomToTop 2s ease-in-out forwards;
-  opacity: 0;
 }
 
 @keyframes fadeInBottomToTop {
@@ -78,6 +77,7 @@
 }
 @keyframes fadeOutBottomToTop {
   0% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
