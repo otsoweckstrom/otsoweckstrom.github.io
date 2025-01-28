@@ -36,7 +36,7 @@
   margin-top: 10vh;
   opacity: 0;
   animation: fadeInBottomToTop 1s ease-in-out forwards;
-  animation-delay: 9s;
+  animation-delay: 10s;
   animation-duration: 3s;
 }
 
@@ -58,7 +58,7 @@
   margin-bottom: 4vh;
   opacity: 0;
   animation: fadeInBottomToTop 1s ease-in-out alternate infinite;
-  animation-delay: 10s;
+  animation-delay: 10.5s;
   animation-duration: 3s;
 }
 
