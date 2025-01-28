@@ -19,7 +19,6 @@
 }
 
 .typing {
-  width: 100vw;
   opacity: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -97,7 +96,7 @@
 
 .typing:nth-child(3) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s 8 forwards;
+    blink 0.5s 7 forwards;
   animation-delay: 4s;
   margin-top: 3vh;
 }
@@ -155,8 +154,9 @@
     align-items: center;
   }
   .typing {
-    width: 50vw;
-    font-size: 1em;
+    max-width: vw;
+    min-width: fit-content;
+    font-size: 0.9em;
     text-align: center;
     margin-left: 0;
   }
