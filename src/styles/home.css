@@ -154,8 +154,6 @@
     align-items: center;
   }
   .typing {
-    max-width: vw;
-    min-width: fit-content;
     font-size: 0.9em;
     text-align: center;
     margin-left: 0;
