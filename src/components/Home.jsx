@@ -39,9 +39,6 @@ const HomePage = () => {
               '--width': `${item.text.length}ch`,
               '--typing': `${item.text.length * 0.07}s`,
               '--steps': `${item.text.length}`,
-              '--blink': `${
-                Math.ceil((item.text.length * 0.5 + 0.5) / 2) * 2 - 1
-              }`,
             }}
           >
             {item.text}

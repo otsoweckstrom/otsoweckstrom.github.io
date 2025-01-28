@@ -85,7 +85,7 @@
 }
 .typing:nth-child(1) {
   animation: typing var(--typing) steps(var(--steps), end) forwards,
-    blink 0.5s var(--blink) forwards;
+    blink 0.5s 2 forwards;
 }
 
 .typing:nth-child(2) {
