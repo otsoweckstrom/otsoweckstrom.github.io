@@ -19,7 +19,7 @@
 }
 
 .typing {
-  width: var(--width);
+  width: 100vw;
   opacity: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -155,6 +155,7 @@
     align-items: center;
   }
   .typing {
+    width: 50vw;
     font-size: 1em;
     text-align: center;
     margin-left: 0;
