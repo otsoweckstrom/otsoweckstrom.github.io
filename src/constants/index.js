@@ -57,6 +57,21 @@ const hello = [
   },
 ]
 
+const projectIntro = [
+  {
+    id: 1,
+    text: "Over the years, I've explored a wide range of technologies. Here, you'll find a collection of projects—some from experimentation, others from real-world applications.",
+  },
+  {
+    id: 2,
+    text: "For personal projects, I've included both source code and live demos so you can explore them further. Professional consulting work is also showcased, but due to confidentiality, I can’t share the code publicly.",
+  },
+  {
+    id: 3,
+    text: "Curious about a project? Let's chat over coffee! ☕",
+  },
+]
+
 const technologies = [
   {
     name: 'HTML 5',
@@ -151,7 +166,7 @@ const experiences = [
     points: [
       `Cluster ry - Software Engineers' Guild - Board Member`,
       `Ruut ry - Student Tech Organization - Board Member`,
-      'Achieving Student Certificate',
+      'Achieving Student - Certificate',
       `Scrum Master Training`,
     ],
   },
@@ -162,10 +177,9 @@ const experiences = [
     iconBg: '#fff',
     date: '2021-2023',
     points: [
+      'Developed full-scale web applications in small agile teams.',
+      `Built a logistics system for 100+ weekly deliveries with AWS & TypeScript.`,
       'Got to work on many interesting projects with clients from all sorts of different industries',
-      `Projects ranged from refactoring an old Kotlin application to planning and implementing full scale web apps`,
-      `Worked mainly in small teams with agile development methodologies`,
-      `Emphasis on frontend development, TypeScript and React but got to use and learn a whole array of technologies`,
       `Was left to oversee an ongoing project over the summer on my 2nd year which gave me a real headstart to client communications`,
     ],
   },
@@ -214,8 +228,8 @@ const experiences = [
       `Web apps - React, TypeScript, CSS`,
       `Mobile app development - React Native`,
       `Cloud platforms - AWS, Azure`,
-      `Databases - SQL, NoSQL, GraphQL, MongoDB`,
-      `Backend and API development`,
+      `Databases - SQL, NoSQL, GraphQL, MongoDB, DynamoDB`,
+      `Backend and API development -  Node.js, Express.js, JavaScript, RESTful`,
     ],
   },
 ]
@@ -388,4 +402,4 @@ const projects = [
   },*/
 ]
 
-export { technologies, experiences, projects, hello }
+export { technologies, experiences, projects, hello, projectIntro }

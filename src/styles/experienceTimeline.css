@@ -54,12 +54,6 @@
   background-color: #000000;
 }
 
-.experience-icon {
-  width: 80%;
-  height: auto;
-  border-radius: 50%;
-}
-
 .experience-title {
   font-size: 1.7rem;
   font-weight: bold;
@@ -68,13 +62,6 @@
   margin-top: 0;
   padding-bottom: 15px;
   border-bottom: 1px solid #333;
-}
-
-.experience-card:nth-child(even) .experience-title {
-  text-align: start;
-}
-.experience-card:nth-child(odd) .experience-title {
-  text-align: start;
 }
 
 .experience-company {
