@@ -64,7 +64,7 @@ const projectIntro = [
   },
   {
     id: 2,
-    text: "For personal projects, I've included both source code and live demos so you can explore them further. Professional consulting work is also showcased, but due to confidentiality, I can’t share the code publicly.",
+    text: "For personal projects, I've included both source code and live demos so you can explore them further. Professional consulting work is also showcased, but due to confidentiality, I can't share the code publicly.",
   },
   {
     id: 3,
@@ -93,7 +93,6 @@ const technologies = [
     name: 'React JS',
     icon: reactjs,
   },
-
   {
     name: 'Tailwind CSS',
     icon: tailwind,
@@ -102,12 +101,10 @@ const technologies = [
     name: 'Node JS',
     icon: nodejs,
   },
-
   {
     name: 'git',
     icon: git,
   },
-
   {
     name: 'python',
     icon: python,
@@ -124,7 +121,6 @@ const technologies = [
     name: 'TensorFlow',
     icon: tensorflow,
   },
-
   {
     name: 'figma',
     icon: figma,
@@ -145,7 +141,6 @@ const technologies = [
     name: 'NextJS',
     icon: nextjs,
   },
-
   {
     name: 'Unity',
     icon: unity,
@@ -199,7 +194,6 @@ const experiences = [
     date: '2023-2024',
     points: [
       'Focused my studies on Artificial Intelligence and Machine Learning',
-
       'Dug deep and found my inner academic weapon forged in the flames of the Korean education system',
       `Met many wonderful and extremely intelligent people that I'm thankful to have gotten to share the time abroad with`,
     ],
@@ -236,15 +230,31 @@ const experiences = [
 
 const projects = [
   {
-    name: 'League of Legends AI Prediction',
+    name: 'CAD Model Profitability Classifier',
     description:
-      'An extensive AI project which predicts the win rate of the next game and the highest winrate choice based on the lobby.',
+      "A machine learning project built as a part of my Master's Thesis that classifies CAD models as profitable or non-profitable based on geometric and dimensional features. The model is trained on a dataset of 10,000+ CAD models, identifying characteristics that correlate with higher print demand.",
+    tags: [
+      { name: 'Python' },
+      { name: 'Scikit-Learn' },
+      { name: 'Pandas' },
+      { name: 'Machine Learning' },
+    ],
+    category: 'Data & Machine Learning',
+    professional: true,
+    image: require('../assets/images/projects/projects_cad_model_classifier.png'),
+    source_code_link:
+      'https://github.com/otsoweckstrom/CAD-Profitability-Classifier',
+  },
+  {
+    name: 'AI Result Predictor',
+    description:
+      'An extensive AI project that predicts the win-rate based on changes in game state in a competitive game with an expected winrate of 50%, beating this by up to 10.4% and giving an average edge of 3.8%.',
     tags: [{ name: 'Python' }, { name: 'TensorFlow' }],
     category: 'Data & Machine Learning',
     professional: false,
-    image: league,
+    image: require('../assets/images/projects/projects_league_ai.png'),
     source_code_link:
-      'https://github.com/otsoweckstrom/AI-Win-Prediction-League',
+      'https://github.com/otsoweckstrom/AI-Win-Prediction-League/blob/main/project.ipynb',
   },
   {
     name: 'Credit Card Classification Algorithm',
@@ -253,32 +263,55 @@ const projects = [
     tags: [{ name: 'R' }],
     category: 'Data & Machine Learning',
     professional: false,
-    image: creditcard,
+    image: require('../assets/images/projects/projects_credit_cards.png'),
     source_code_link: 'https://github.com/otsoweckstrom/credit_AI/tree/main',
   },
   {
-    name: 'Reddit Comment Scraper',
+    name: 'Reddit Comment Insights',
     description:
-      'Scrapes subreddit posts, orders words by frequency, and generates a data visualizations.',
+      'Get insights into trending topics on reddit at a glance. Scrapes subreddit posts, orders words by frequency, and generates data visualizations.',
     tags: [{ name: 'Python' }],
     category: 'Data & Machine Learning',
     professional: false,
-    image: wordcloud,
+    image: require('../assets/images/projects/projects_reddit.png'),
     source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
     youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
   },
   {
-    name: 'This Website',
+    name: 'Onboarding Website',
     description:
-      'A personal portfolio website built with Vanilla JavaScript, React, and CSS to test my frontend skills and display some projects.',
-    tags: [{ name: 'React' }, { name: 'JavaScript' }, { name: 'CSS' }],
+      'This onboarding website built using TypeScript, TailwindCSS and React.',
+    tags: [
+      { name: 'React' },
+      { name: 'TypeScript' },
+      { name: 'TailwindCSS' },
+      { name: 'Node.js' },
+    ],
     category: 'Full-Stack Web Applications',
     professional: false,
-    image: portfolio,
+    image: require('../assets/images/projects/projects_onboarding_website.png'),
     source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
+    app_link: 'https://onboarding-website-ten.vercel.app/portfolio',
   },
   {
-    name: 'Polamk - Work Help Finland',
+    name: 'Portfolio Website',
+    description: `A personal portfolio website built with Vanilla JavaScript, React, and CSS.
+
+    Checkout my CV at the bottom!`,
+    tags: [
+      { name: 'React' },
+      { name: 'JavaScript' },
+      { name: 'CSS' },
+      { name: 'Node.JS' },
+    ],
+    category: 'Full-Stack Web Applications',
+    professional: false,
+    image: require('../assets/images/projects/projects_portfolio_website.png'),
+    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
+    app_link: 'https://www.otsoweckstrom.com',
+  },
+  {
+    name: 'Work Help Finland Mobile App',
     description:
       'A mobile app aimed at providing immigrants with labor law information to reduce workplace exploitation.',
     tags: [
@@ -289,14 +322,13 @@ const projects = [
     ],
     category: 'Mobile Development',
     professional: true,
-    image: null,
-    source_code_link: '',
+    image: require('../assets/images/projects/projects_work_help_finland.png'),
     app_link: 'https://apps.apple.com/fi/app/work-help-finland/id1626783832',
   },
   {
     name: 'Mukify - Moomin Mug Store',
     description:
-      'A marketplace-style app for managing and purchasing ceramic collectibles, featuring a seamless UI.',
+      'A marketplace-style app for managing and purchasing ceramic collectibles. 24 000+ Users ',
     tags: [
       { name: 'TypeScript' },
       { name: 'CSS' },
@@ -305,13 +337,13 @@ const projects = [
     ],
     category: 'Mobile Development',
     professional: true,
-    image: null,
-    app_link: 'https://apps.apple.com/fi/app/mukify/id1608787906',
+    image: require('../assets/images/projects/projects_mukify.png'),
+    app_link: 'https://www.mukify.com/fi',
   },
   {
-    name: 'Kuljetustilausten Hallintajärjestelmä',
+    name: 'Logistics Management System',
     description:
-      'A full-scale logistics system for task assignment, delivery tracking, and billing management.',
+      'A full-scale logistics system for task assignment, delivery tracking, and billing management. Built for a medium sized trucking company with multiple delivery routes a day.',
     tags: [
       { name: 'TypeScript' },
       { name: 'JavaScript' },
@@ -321,44 +353,26 @@ const projects = [
     ],
     category: 'Full-Stack Web Applications',
     professional: true,
-    image: null,
-    source_code_link: null,
+    image: require('../assets/images/projects/projects_logistics_calendar.png'),
   },
   {
-    name: 'Mittaussovelluksen Päivittäminen',
+    name: 'Security Awareness Application',
     description:
-      'Upgraded a web-based measurement application with new features and improved backend and database management.',
-    tags: [
-      { name: 'JavaScript' },
-      { name: 'Node.js' },
-      { name: 'Azure' },
-      { name: 'VirtualBox' },
-      { name: 'MongoDB' },
-      { name: 'CertBot' },
-    ],
-    category: '',
-    professional: true,
-    image: null,
-    source_code_link: null,
-  },
-  {
-    name: 'F-Secure Security Awareness App',
-    description:
-      "Developed a school competition app for F-Secure to inform the public about potential security vulnerabilities in their devices. Integrated a known vulnerability database, rewritten by ChatGPT into layman's terms. Designed a visual UI with a danger meter to present issues effectively.",
-    role: 'Scrum Master, leading the team to achieve 1st place in the competition.',
+      "Developed an app for F-Secure to inform the public about potential security vulnerabilities in their devices. Integrated a known vulnerability database, and provided the results rewritten in layman's terms by using OpenAI's API.",
     tags: [
       { name: 'JavaScript' },
       { name: 'React' },
       { name: 'Node.js' },
       { name: 'CSS' },
       { name: 'OpenAI API' },
+      { name: 'ChatGPT' },
+      { name: 'CVE' },
     ],
     category: 'Full-Stack Web Applications',
     professional: false,
-    image: null,
+    image: require('../assets/images/projects/projects_f_secure.png'),
     source_code_link: 'https://github.com/RASP-Team-H/f-secure-iot',
   },
-
   {
     name: 'Food Tracking App',
     description:
@@ -377,29 +391,6 @@ const projects = [
     image: null,
     source_code_link: null,
   },
-
-  /* {
-    name: 'Democracy Chamber',
-    description:
-      'An open platform for  democratic political discussion. The app generates meaningful insights for politicians utilizing pol.is helping every citizens opinion be heard.',
-    key_features: [
-      'Discussion Threads: Users can present opinions, vote, and share thoughts on various topics.',
-      'Policymaker Polls: Invite-only polls for targeted demographics with insights provided by Pol.is integration.',
-      'Anonymous Participation: Ensures privacy for users in discussions.',
-      'Community Moderation: Maintains respectful and constructive discourse.',
-    ],
-    tags: [
-      { name: 'JavaScript' },
-      { name: 'React' },
-      { name: 'Node.js' },
-      { name: 'CSS' },
-      { name: 'Pol.is Integration' },
-    ],
-    category: 'Full-Stack Web Applications',
-    professional: false,
-    image: null,
-    source_code_link: 'https://github.com/otsoweckstrom/democracy_chamber',
-  },*/
 ]
 
 export { technologies, experiences, projects, hello, projectIntro }
