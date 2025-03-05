@@ -29,44 +29,8 @@ const Contact = () => {
     }))
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    // Form validation
-    if (!formData.name || !formData.email || !formData.message) {
-      setFormStatus({
-        submitted: false,
-        error: true,
-        message: 'Please fill in all fields.',
-      })
-      return
-    }
-
-    try {
-      // Replace with your actual form submission logic
-      // Example: await axios.post('/api/contact', formData);
-
-      // Simulate successful submission
-      setFormStatus({
-        submitted: true,
-        error: false,
-        message: "Message sent successfully! I'll get back to you soon.",
-      })
-
-      // Clear form
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      })
-    } catch (error) {
-      setFormStatus({
-        submitted: false,
-        error: true,
-        message: 'Something went wrong. Please try again later.',
-      })
-    }
-  }
+  // This is your email for FormSubmit service
+  const formSubmitEmail = 'otsovkweckstrom@gmail.com' // Replace with your email
 
   return (
     <div className='contact-section-container'>
@@ -85,9 +49,9 @@ const Contact = () => {
           </p>
 
           <div className='contact-links'>
-            <a href='mailto:your.email@example.com' className='contact-link'>
+            <a href={`mailto:${formSubmitEmail}`} className='contact-link'>
               <FontAwesomeIcon icon={faEnvelope} />
-              <span>otsovkweckstrom@gmail.com</span>
+              <span>{formSubmitEmail}</span>
             </a>
 
             <a
@@ -113,7 +77,30 @@ const Contact = () => {
         </div>
 
         <div className='contact-form-container'>
-          <form className='contact-form' onSubmit={handleSubmit}>
+          {/* FormSubmit.co form - no backend needed */}
+          <form
+            className='contact-form'
+            action={`https://formsubmit.co/${formSubmitEmail}`}
+            method='POST'
+            onSubmit={() => {
+              setFormStatus({
+                submitted: true,
+                error: false,
+                message:
+                  "Message sent successfully! I'll get back to you soon.",
+              })
+            }}
+          >
+            {/* FormSubmit configuration */}
+            <input
+              type='hidden'
+              name='_subject'
+              value='New portfolio contact message'
+            />
+            <input type='hidden' name='_captcha' value='false' />
+            <input type='hidden' name='_template' value='table' />
+            <input type='hidden' name='_next' value={window.location.href} />
+
             <div className='form-group'>
               <label htmlFor='name'>Name</label>
               <input
@@ -123,6 +110,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder='Your name'
+                required
               />
             </div>
 
@@ -135,6 +123,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder='your.email@example.com'
+                required
               />
             </div>
 
@@ -147,6 +136,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder='What would you like to discuss?'
                 rows='5'
+                required
               />
             </div>
 
