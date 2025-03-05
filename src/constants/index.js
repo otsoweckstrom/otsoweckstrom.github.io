@@ -230,6 +230,39 @@ const experiences = [
 
 const projects = [
   {
+    name: 'Onboarding Website',
+    description:
+      'This onboarding website built using TypeScript, TailwindCSS and React.',
+    tags: [
+      { name: 'React' },
+      { name: 'TypeScript' },
+      { name: 'TailwindCSS' },
+      { name: 'Node.js' },
+    ],
+    category: 'Full-Stack Web Applications',
+    professional: false,
+    image: require('../assets/images/projects/projects_onboarding_website.png'),
+    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
+    app_link: 'https://onboarding-website-ten.vercel.app/portfolio',
+  },
+  {
+    name: 'Portfolio Website',
+    description: `A personal portfolio website built with Vanilla JavaScript, React, and CSS.
+
+    Checkout my CV at the bottom!`,
+    tags: [
+      { name: 'React' },
+      { name: 'JavaScript' },
+      { name: 'CSS' },
+      { name: 'Node.JS' },
+    ],
+    category: 'Full-Stack Web Applications',
+    professional: false,
+    image: require('../assets/images/projects/projects_portfolio_website.png'),
+    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
+    app_link: 'https://www.otsoweckstrom.com',
+  },
+  {
     name: 'CAD Model Profitability Classifier',
     description:
       "A machine learning project built as a part of my Master's Thesis that classifies CAD models as profitable or non-profitable based on geometric and dimensional features. The model is trained on a dataset of 10,000+ CAD models, identifying characteristics that correlate with higher print demand.",
@@ -276,39 +309,6 @@ const projects = [
     image: require('../assets/images/projects/projects_reddit.png'),
     source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
     youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
-  },
-  {
-    name: 'Onboarding Website',
-    description:
-      'This onboarding website built using TypeScript, TailwindCSS and React.',
-    tags: [
-      { name: 'React' },
-      { name: 'TypeScript' },
-      { name: 'TailwindCSS' },
-      { name: 'Node.js' },
-    ],
-    category: 'Full-Stack Web Applications',
-    professional: false,
-    image: require('../assets/images/projects/projects_onboarding_website.png'),
-    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
-    app_link: 'https://onboarding-website-ten.vercel.app/portfolio',
-  },
-  {
-    name: 'Portfolio Website',
-    description: `A personal portfolio website built with Vanilla JavaScript, React, and CSS.
-
-    Checkout my CV at the bottom!`,
-    tags: [
-      { name: 'React' },
-      { name: 'JavaScript' },
-      { name: 'CSS' },
-      { name: 'Node.JS' },
-    ],
-    category: 'Full-Stack Web Applications',
-    professional: false,
-    image: require('../assets/images/projects/projects_portfolio_website.png'),
-    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
-    app_link: 'https://www.otsoweckstrom.com',
   },
   {
     name: 'Work Help Finland Mobile App',
