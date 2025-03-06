@@ -242,8 +242,8 @@ const projects = [
     category: 'Full-Stack Web Applications',
     professional: false,
     image: require('../assets/images/projects/projects_onboarding_website.png'),
-    source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master',
-    /*     app_link: 'https://www.northernprogramming.com', */
+    /*     source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master', */
+    app_link: 'https://www.northernprogramming.com',
   },
   {
     name: 'Portfolio Website',
