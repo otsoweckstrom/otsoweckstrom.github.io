@@ -30,7 +30,7 @@ const Contact = () => {
   }
 
   // This is your email for FormSubmit service
-  const formSubmitEmail = 'otsovkweckstrom@gmail.com' // Replace with your email
+  const formSubmitEmail = 'otsovkweckstrom@gmail.com'
 
   return (
     <div className='contact-section-container'>
