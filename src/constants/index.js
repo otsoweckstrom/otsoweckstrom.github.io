@@ -232,7 +232,7 @@ const projects = [
   {
     name: 'Onboarding Website',
     description:
-      'This onboarding website built using TypeScript, TailwindCSS and React.',
+      'My newest web-development project, working on a freelancing / lead gen website!',
     tags: [
       { name: 'React' },
       { name: 'TypeScript' },
