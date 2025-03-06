@@ -371,25 +371,7 @@ const projects = [
     category: 'Full-Stack Web Applications',
     professional: false,
     image: require('../assets/images/projects/projects_f_secure.png'),
-    /*     source_code_link: 'https://github.com/RASP-Team-H/f-secure-iot', */
-  },
-  {
-    name: 'Food Tracking App',
-    description:
-      'A food tracking application using ChatGPT to analyze menu data and display nutritional and environmental impact information.',
-    tags: [
-      { name: 'JavaScript' },
-      { name: 'SQL' },
-      { name: 'Python' },
-      { name: 'React' },
-      { name: 'Node.js' },
-      { name: 'CSS' },
-      { name: 'API' },
-    ],
-    category: 'Mobile Development',
-    professional: true,
-    image: null,
-    source_code_link: null,
+    /*  source_code_link: '' 'https://github.com/RASP-Team-H/f-secure-iot'*/
   },
 ]
 
