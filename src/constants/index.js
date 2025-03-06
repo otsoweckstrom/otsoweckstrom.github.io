@@ -232,7 +232,7 @@ const projects = [
   {
     name: 'Onboarding Website',
     description:
-      'My newest web-development project, working on a freelancing / lead gen website!',
+      'My newest web-development project, working on a freelancing / lead gen website.',
     tags: [
       { name: 'React' },
       { name: 'TypeScript' },
