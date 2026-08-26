@@ -23,10 +23,8 @@ import {
   unity,
   mysql,
   nextjs,
-  league,
-  portfolio,
-  creditcard,
-  wordcloud,
+  docker,
+  logo,
 } from '../assets'
 
 export const navLinks = [
@@ -142,6 +140,10 @@ const technologies = [
     icon: nextjs,
   },
   {
+    name: 'Docker',
+    icon: docker,
+  },
+  {
     name: 'Unity',
     icon: unity,
   },
@@ -157,7 +159,7 @@ const experiences = [
     company_name: 'LUT University',
     icon: lut,
     iconBg: '#000',
-    date: '2018-2024',
+    date: '2018-2025',
     points: [
       `Cluster ry - Software Engineers' Guild - Board Member`,
       `Ruut ry - Student Tech Organization - Board Member`,
@@ -166,11 +168,11 @@ const experiences = [
     ],
   },
   {
-    title: 'Junior Developer ',
+    title: 'Junior Developer',
     company_name: 'Visma Consulting',
     icon: visma,
     iconBg: '#fff',
-    date: '2021-2023',
+    date: 'Mar 2021 - Oct 2022',
     points: [
       'Developed full-scale web applications in small agile teams.',
       `Built a logistics system for 100+ weekly deliveries with AWS & TypeScript.`,
@@ -191,7 +193,7 @@ const experiences = [
     company_name: 'Seoul National University of Technology and Science',
     icon: seoultech,
     iconBg: '#fff',
-    date: '2023-2024',
+    date: 'Aug 2023 - Jan 2024',
     points: [
       'Focused my studies on Artificial Intelligence and Machine Learning',
       'Dug deep and found my inner academic weapon forged in the flames of the Korean education system',
@@ -203,7 +205,7 @@ const experiences = [
     company_name: 'Ajatec Oy, Suomen Teknologiateollisuudenliitto, LUT',
     icon: ajatec,
     iconBg: '#fff',
-    date: '2024',
+    date: 'Jan 2025 - Aug 2025',
     points: [
       'Thesis title: Machine Learning in Additive Manufacturing',
       `Analyzing Ajatec Oy's historical data of CAD models to find profitability indicators`,
@@ -216,7 +218,7 @@ const experiences = [
     company_name: 'TwoDay',
     icon: twoday,
     iconBg: '#fff',
-    date: '2023-Present',
+    date: 'Oct 2022 - Jan 2025',
     points: [
       `Started work at Twoday Oy after moving to Helsinki, new projects new challenges!`,
       `Web apps - React, TypeScript, CSS`,
@@ -226,13 +228,54 @@ const experiences = [
       `Backend and API development -  Node.js, Express.js, JavaScript, RESTful`,
     ],
   },
+  {
+    title: `Master's Degree in Software Engineering`,
+    company_name: 'LUT University',
+    icon: lut,
+    iconBg: '#000',
+    date: 'Oct 2025',
+    points: [
+      'Thesis on Machine Learning in Additive Manufacturing, done with Ajatec Oy',
+      'Received a research grant from Suomen Teknologiateollisuudenliitto',
+      'Scrum Master certificate',
+    ],
+  },
+  {
+    // TODO: add src/assets/company/netlight.png and swap `logo` for it
+    title: 'Consultant',
+    company_name: 'Netlight',
+    icon: logo,
+    iconBg: '#fff',
+    date: 'Aug 2025 - Jan 2026',
+    points: [
+      'Client-facing AI and Machine Learning consulting',
+      'Unsupervised anomaly and fraud detection on vehicle fleet data for a global humanitarian organisation',
+      'Scoped and built an AI proof-of-value for an enterprise client, with the business case quantified',
+      'Python, autoencoders, explainable AI, technical architecture, stakeholder management',
+    ],
+  },
+  {
+    // TODO: add src/assets/company/castor.png and swap `logo` for it
+    title: 'Senior Backend Engineer',
+    company_name: 'Castor EDC',
+    icon: logo,
+    iconBg: '#fff',
+    date: 'Feb 2026 - Present',
+    points: [
+      'Backend integrations and reporting on a clinical trial data platform',
+      'Delivery across 20+ client studies and five repositories',
+      'Third-party vendor integrations, event-driven pipelines, key-based SFTP',
+      'Root cause analysis on client escalations, and a technical design review authored for management sign-off',
+      'Python, Kubernetes, PostgreSQL, event-driven architecture',
+    ],
+  },
 ]
 
 const projects = [
   {
     name: 'Onboarding Website',
     description:
-      'My newest web-development project, working on a freelancing / lead gen website.',
+      'A freelancing and lead-generation website, built end to end. The domain is no longer live.',
     tags: [
       { name: 'React' },
       { name: 'TypeScript' },
@@ -242,8 +285,6 @@ const projects = [
     category: 'Full-Stack Web Applications',
     professional: false,
     image: require('../assets/images/projects/projects_onboarding_website.png'),
-    /*     source_code_link: 'https://github.com/otsoweckstrom/all_me/tree/master', */
-    app_link: 'https://www.northernprogramming.com',
   },
   {
     name: 'Portfolio Website',
@@ -275,13 +316,67 @@ const projects = [
     category: 'Data & Machine Learning',
     professional: true,
     image: require('../assets/images/projects/projects_cad_model_classifier.png'),
-    source_code_link:
-      'https://github.com/otsoweckstrom/CAD-Profitability-Classifier',
+    source_code_link: 'https://github.com/otsoweckstrom/dippa',
+  },
+  {
+    name: 'Generative AI Toolkit',
+    description:
+      'A suite of proof-of-concept tools built on generative AI: interactive image generation, a real-time music generation system, and a set of text-to-text tools spanning several LLMs and RAG. Runs against hosted, local and self-hosted models.',
+    tags: [
+      { name: 'Python' },
+      { name: 'LLMs' },
+      { name: 'RAG' },
+      { name: 'Agents' },
+      { name: 'Self-hosted Models' },
+    ],
+    category: 'Data & Machine Learning',
+    professional: false,
+    app_link: 'https://ai.otsoweckstrom.com/',
+  },
+  {
+    name: 'Anomaly Detection in Fleet Data',
+    description:
+      'Unsupervised models (autoencoders) detecting anomalies and fraud patterns across a global humanitarian organisation\'s vehicle fleet. Built the analysis pipeline that surfaced irregular behaviour, vehicle inconsistencies and pricing outliers, with explainable-AI output so findings could be checked by a human rather than trusted blind.',
+    tags: [
+      { name: 'Python' },
+      { name: 'Unsupervised Learning' },
+      { name: 'Autoencoders' },
+      { name: 'Explainable AI' },
+    ],
+    category: 'Data & Machine Learning',
+    professional: true,
+  },
+  {
+    name: 'AI Proof-of-Value for Enterprise Client',
+    description:
+      'Defined the scope, technical architecture and success metrics with stakeholders, then built the full-stack solution. Demonstrated order-cancellation handling dropping from 20-30 minutes to roughly 30 seconds per case, with the business case quantified for a production decision.',
+    tags: [
+      { name: 'AI Strategy' },
+      { name: 'Technical Architecture' },
+      { name: 'Full-Stack' },
+      { name: 'Proof of Concept' },
+    ],
+    category: 'Data & Machine Learning',
+    professional: true,
+  },
+  {
+    name: 'Local-LLM Command Line Tools',
+    description:
+      'Two takes on making a small local model useful in the terminal: generating git commit messages from staged changes, translating plain English into shell commands, and answering command-line questions from a curated database. Runs on Ollama, fully offline.',
+    tags: [
+      { name: 'Python' },
+      { name: 'Ollama' },
+      { name: 'Local LLM' },
+      { name: 'CLI' },
+    ],
+    category: 'Data & Machine Learning',
+    professional: false,
+    source_code_link: 'https://github.com/otsoweckstrom/cli-command-pedia',
   },
   {
     name: 'AI Result Predictor',
     description:
-      'An extensive AI project that predicts the win-rate based on changes in game state in a competitive game with an expected winrate of 50%, beating this by up to 10.4% and giving an average edge of 3.8%.',
+      'A team project predicting match outcome from champion drafts alone, before the game begins. Includes a "best next pick" recommender that suggests which champion most improves your odds at each stage of the draft.',
     tags: [{ name: 'Python' }, { name: 'TensorFlow' }],
     category: 'Data & Machine Learning',
     professional: false,
@@ -307,7 +402,6 @@ const projects = [
     category: 'Data & Machine Learning',
     professional: false,
     image: require('../assets/images/projects/projects_reddit.png'),
-    source_code_link: 'https://github.com/otsoweckstrom/RedditParser',
     youtube_link: 'https://youtube.com/watch?v=FCAnanTNsYs',
   },
   {
